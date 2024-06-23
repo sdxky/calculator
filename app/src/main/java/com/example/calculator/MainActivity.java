@@ -33,7 +33,11 @@ public class MainActivity extends AppCompatActivity {
             currentOperation = "";
         } else if (textButton.equals(".")) {
             if (!textView.getText().toString().contains(".")) {
-                textView.append(".");
+                if (textView.getText().toString().equals("0") || isOperationOnClick) {
+                    textView.setText("0.");
+                } else {
+                    textView.append(".");
+                }
             }
         } else if (textView.getText().toString().equals("0") || isOperationOnClick) {
             textView.setText(textButton);

@@ -189,9 +189,9 @@
 
             <com.google.android.material.button.MaterialButton
                 style="@style/Dark_Gray.Button"
-                android:onClick="onOperationClick"
+                android:onClick="onNumberClick"
                 android:layout_marginHorizontal="18dp"
-                android:text="," />
+                android:text="." />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_equal"
